@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(-315deg, rgb(126, 126, 215), rgb(4, 4, 49));
+    ;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warper {
+    flex-wrap: wrap;
+}
+
+
+// header
+
+header {
+    height: 15vh;
+    background: linear-gradient(315deg, rgb(126, 126, 215), rgb(4, 4, 49));
+
+    .container {
+        justify-content: space-between;
+        margin: 0 1rem;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    img {
+        height: 10vh;
+        margin: auto 0;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin: 0.5rem 2rem;
+        }
+    }
+}
+
+// page index.php
+
+.matela {
+    justify-content: flex-start;
+
+    ul {
+        margin: 2rem 0;
+        text-decoration: none;
+
+        img {
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.737);
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 0.5s ease-in-out;
+            }
+
+        }
+
+        li {
+            text-align: center;
+            height: 100px;
+            width: 200px;
+            font-size: 3rem;
+            font-weight: 800;
+            padding: 0 1rem;
+            text-transform: capitalize;
+
+            span {
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                color: black;
+
+                .button {
+                    height: 40px;
+                    color: black;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+// page de produit matela
+
+.product_container {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+
+    .img_container {
+        img {
+            height: 200px;
+            border-radius: 15px;
+        }
+    }
+
+    .text_container {
+        height: 20vh;
+        p {
+            margin: 20px auto;
+            color: white;
+            font-size: 3rem;
+        }
+    }
+}

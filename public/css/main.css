@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(-315deg, rgb(126, 126, 215), rgb(4, 4, 49));
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warper {
+  flex-wrap: wrap;
+}
+
+header {
+  height: 15vh;
+  background: linear-gradient(315deg, rgb(126, 126, 215), rgb(4, 4, 49));
+}
+header .container {
+  justify-content: space-between;
+  margin: 0 1rem;
+  overflow: hidden;
+  align-items: center;
+}
+header img {
+  height: 10vh;
+  margin: auto 0;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  margin: 0.5rem 2rem;
+}
+
+.matela {
+  justify-content: flex-start;
+}
+.matela ul {
+  margin: 2rem 0;
+  text-decoration: none;
+}
+.matela ul img {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.737);
+}
+.matela ul img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.matela ul li {
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 0 1rem;
+  text-transform: capitalize;
+}
+.matela ul li span {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: black;
+}
+.matela ul li span .button {
+  height: 40px;
+  color: black;
+  border-radius: 5px;
+}
+
+.product_container {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+}
+.product_container .img_container img {
+  height: 200px;
+  border-radius: 15px;
+}
+.product_container .text_container {
+  height: 20vh;
+}
+.product_container .text_container p {
+  margin: 20px auto;
+  color: white;
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=main.css.map */

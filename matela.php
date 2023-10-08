@@ -33,7 +33,7 @@ if ($find) {
 ?>
 <div class="product_container">
     <div class="img_container">
-    <img src="public/img/matelas/<?=$data["photo"] ?>.jpg" alt="">
+    <img src="public/img/matelas/<?=$data["photo"] ?>" alt="">
 </div>
 <div class="text_container">
     <p><?= $data["marque"] ?></p>

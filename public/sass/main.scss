@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/filson-soft.eot"); /* IE9*/
+    src: url("../fonts/filson-soft.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("../fonts/filson-soft.woff2") format("woff2"),
+        /* chrome、firefox */ url("../fonts/filson-soft.woff") format("woff"),
+        /* chrome、firefox */ url("../fonts/filson-soft.ttf") format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url("../fonts/filson-soft.svg#Filson Soft W03 Regular")
+            format("svg"); /* iOS 4.1- */
+}
+
 * {
     box-sizing: border-box;
     list-style: none;
@@ -128,4 +139,16 @@ header {
             font-size: 3rem;
         }
     }
+}
+
+.btn-matelas {
+    font-family: "Filson Soft";
+    font-size: 1.8rem;
+    background-color: $color-primary;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2rem;
 }

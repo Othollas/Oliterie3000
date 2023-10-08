@@ -13,7 +13,7 @@ CREATE TABLE matelas (
     nom VARCHAR(100) NOT NULL,
     taille VARCHAR(100) NOT NULL,
     photo VARCHAR(255),
-    prix DECIMAL(6,2) NOT NULL,
+    prix DECIMAL(6,2) NOT NULL
 );
 /* Entrer les references des matelas */
 
@@ -21,7 +21,7 @@ INSERT INTO matelas (
     marque, nom, taille, photo, prix
 )
 VALUES
-("epeda", "confort", "90X190", "matelas_epeda_confort", 579.99),
-("dreamway", "moelleux", "90X190", "matelas_dreamway_moelleux", 709.99),
-("bultex", "ferme", "90X190", "matelas_bultex_ferme", 759.99),
-("epeda", "detente", "140X190", "matelas_epeda_detente", 1019.99);
+("epeda", "confort", "90X190", "matelas_epeda_confort.jpg", 579.99),
+("dreamway", "moelleux", "90X190", "matelas_dreamway_moelleux.jpg", 709.99),
+("bultex", "ferme", "90X190", "matelas_bultex_ferme.jpg", 759.99),
+("epeda", "detente", "140X190", "matelas_epeda_detente.jpg", 1019.99);

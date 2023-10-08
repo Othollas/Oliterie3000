@@ -19,7 +19,7 @@ $matelas = $query->fetchAll(PDO::FETCH_ASSOC);
             <div class="matela">
                 <ul class="container">
                     <a href="matela.php?id=<?= $matela["id"] ?>">
-                        <img src="public/img/matelas/<?= $matela["photo"] ?>.jpg" alt="">
+                        <img src="public/img/matelas/<?= $matela["photo"] ?>" alt="">
                     </a>
                     <li><?= $matela["marque"] ?></li>
                     <li><?= $matela["nom"] ?></li>

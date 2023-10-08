@@ -13,14 +13,18 @@
         <div class="container">
             <div>
                 <a href="index.php">
-                <img src="public/img/logos/logo_fond_transparent.png" alt="" >
+                    <img src="public/img/logos/logo_fond_transparent.png" alt="">
                 </a>
             </div>
             <div>
 
                 <ul>
-                    <li>Acceuil</li>
-                    <li>ajouter un matelas</li>
+                <a href="./index.php">
+                        <li>Accueil</li>
+                    </a>
+                    <a href="./add_matelas.php">
+                        <li>ajouter un matelas</li>
+                    </a>
                 </ul>
             </div>
         </div>

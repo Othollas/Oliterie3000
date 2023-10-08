@@ -13,7 +13,7 @@ $matelas = $query->fetchAll(PDO::FETCH_ASSOC);
 <?php include './template/header.php' ?>
 
 <div class="container">
-    <div class="container warper">
+    <div class="width">
         <?php
         foreach ($matelas as $matela) { ?>
             <div class="matela">
@@ -26,8 +26,7 @@ $matelas = $query->fetchAll(PDO::FETCH_ASSOC);
                     <li><?= $matela["taille"] ?></li>
                     <li><?= $matela["prix"] ?></li>
                     <li>
-                        <button class="button">modifier</button>
-                        <button class="button">supprimer</button>
+                    <button class="delete-btn"><a href="supprimer_produit.php?id=<?= $matela['id'] ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce produit ?')">Supprimer</a></button> 
                     </li>
                 </ul>
             </div>

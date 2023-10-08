@@ -3,19 +3,17 @@
 $find = false;
 $data = array("nom" => "Recette introuvable");
 if (isset($_GET["id"])) {
-    // on sait qu'il y a un paramètre id dans l'url
-    // MAIS pour autant ça ne garantit pas que l'id de la recette existe réellement
-    // Connexion à la base marmiton
+
     $dsn = "mysql:host=localhost;dbname=oliterie3000";
     $db = new PDO($dsn, "root", "");
 
-    // 1/ On prépare la requête SQL avec un paramètre pour palier à l'injection SQL
+
     $query = $db->prepare("SELECT * FROM matelas WHERE id = :id");
-    // 2/ On donne des valeurs à nos paramètres
+ 
     $query->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
-    // 3/ On execute notre requête préalablement préparée
+
     $query->execute();
-    $matela = $query->fetch(); // retourne un tableau associatif de la recette concernée ou false si pas de correspondance
+    $matela = $query->fetch(); 
 
     if ($matela) {
         $find = true;
@@ -42,8 +40,7 @@ if ($find) {
     <p><?= $data["prix"] ?> €</p>
 </div>
 </div>
-<button class="button">modifier</button>
-                        <button class="button">supprimer</button>
+<button class="delete-btn"><a href="supprimer_produit.php?id=<?= $matela['id'] ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce produit ?')">Supprimer</a></button> 
 <?php
 }
 
